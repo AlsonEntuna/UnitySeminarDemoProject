@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;  // Use for Unity 5.3.x Versions
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -17,7 +18,8 @@ public class MainMenuController : MonoBehaviour
     /// <param name="sceneToLoad"></param>
     public void LoadScene(string sceneToLoad)
     {
-        Application.LoadLevel(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad);
+        //Application.LoadLevel(sceneToLoad);
     }
 
     /// <summary>
