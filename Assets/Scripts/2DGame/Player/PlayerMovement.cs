@@ -39,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Gets the input of the player to tell the code that the player wants to jump
         if (Input.GetButtonDown("Jump") && grounded) jump = true;
+
+        // Sets the Animator data of "Grounded" to grounded
+        anim.SetBool("Grounded", grounded);
     }
 
     /// <summary>
@@ -65,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         // Jump Algorithm
         if (jump)
         {
-            anim.SetTrigger("Jump");
             rigidBody2D.AddForce(new Vector2(0f, JumpForce));
             jump = false;
         }
