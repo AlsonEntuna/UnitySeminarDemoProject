@@ -95,9 +95,9 @@ GameObject:
   - 4: {fileID: 23761053}
   - 212: {fileID: 23761052}
   - 50: {fileID: 23761051}
-  - 114: {fileID: 23761050}
   - 95: {fileID: 23761049}
   - 61: {fileID: 23761054}
+  - 114: {fileID: 23761050}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -114,7 +114,7 @@ Animator:
   m_GameObject: {fileID: 23761048}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e90b44b3e9094442a1e3de56f5969f2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -133,10 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f03a0060dad774386e4808c6618c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 365
-  maxSpeed: 5
-  jumpForce: 500
-  groundCheck: {fileID: 1029433845}
+  MovementSpeed: 365
+  MaxSpeed: 5
+  JumpForce: 500
+  GroundCheckObject: {fileID: 1029433845}
   facingRight: 1
   jump: 0
   grounded: 0
