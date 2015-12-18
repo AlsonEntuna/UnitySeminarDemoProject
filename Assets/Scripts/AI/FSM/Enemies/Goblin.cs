@@ -15,7 +15,7 @@ public class Goblin : Enemy
             CurrentState = State.Patrol;  // Set the current state to Patrol State
             anim.SetBool("Locomotion", true);   // Set the animator data
             wanderpointCounter++;               // increment the counter
-            if (wanderpointCounter > WanderPoints.Count) wanderpointCounter = 0;     // If the max value of the counter is reached the reset back to 0
+            if (wanderpointCounter >= WanderPoints.Count) wanderpointCounter = 0;     // If the max value of the counter is reached the reset back to 0
             timeElapsed = 0.0f;      // Reset timeElapsed to 0
         }
     }
